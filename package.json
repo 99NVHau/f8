@@ -2,10 +2,11 @@
   "name": "F8",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "nodemon --inspect index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --inspect src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node-sass --watch resources/scss/style.scss src/public/css/style.css"
   },
   "keywords": [
     "\\"
@@ -13,10 +14,19 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
     "express": "^4.17.1",
-    "expressjs": "^1.0.1"
+    "express-handlebars": "^5.3.3",
+    "expressjs": "^1.0.1",
+    "googleapis": "^85.0.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.12"
+    "morgan": "^1.10.0",
+    "node": "^16.6.1",
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12",
+    "sass": "^1.39.0"
   }
 }
